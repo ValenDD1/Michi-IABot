@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MICHI</title>
+        <link rel="icon" href="{{ url_for('static', filename='images/SENATI_LOGO.jpg') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        
+    </head>
+    <body class="michi-body">
+        <header class="michi-header">
+            <nav class="michi-navbar">
+                <ul>
+                    
+                    <li><a href="/">Jugar</a></li>
+                    <li  id='grafico' ><a href="/grafico">Gráfico</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="michi-main">
+
+            <section class="instrucciones-michi" id="jugar" >
+                <h2>Instrucciones</h2>
+                <p>
+                    Este es un juego de Tic Tac Toe (Michi) entre un jugador humano y una IA que utiliza una red neuronal. 
+                    El jugador toma turnos para marcar una casilla en el tablero. La IA, entrenada con técnicas de aprendizaje automático, 
+                    analiza los movimientos y busca optimizar sus jugadas. El primero en conseguir tres en línea,gana el juego. 
+                    
+                </p>
+                
+            </section>
+                <div class="tablero-michi"  id="tablero-michi">
+                        
+
+                </div>
+                <div class="status-michi" ><div id="status" ></div></div>
+                
+                <div class="controles-michi">
+                    <button class="iniciar-partida-michi" id="iniciar-partida" >Iniciar Partida</button>
+                </div>
+                <div class="puntajes-michi" >
+                    <p id="puntaje-jugador"></p>
+                    <p>-</p>
+                    <p id="puntaje-ia"></p>
+                </div>
+
+        </main>
+
+        <footer class="michi-footer">
+            <p>&copy; TIC TAC TOC CON RED NEURONAL</p>
+        </footer>
+        <script  src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+</html>
+
+
+
+

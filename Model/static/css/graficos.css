@@ -1,0 +1,107 @@
+/* Estilos generales del cuerpo */
+.michi-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #141414;
+    padding: 0 20px;
+    background-image: url("../images/nueronaal.gif");
+    background-position: center;
+    background-color: black;
+    background-size: 30%;
+}
+
+
+.grafico-header, .grafico-footer {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: #141414;
+    color: white;
+}
+
+.michi-footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+.michi-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1; 
+    margin: 20px 0;
+}
+
+
+.michi-navbar {
+    background-color: #141414;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.michi-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.michi-navbar ul li {
+    margin: 0 20px;
+}
+
+.michi-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.michi-navbar ul li a:hover {
+    color: #4532f0; 
+}
+
+.Titulo-michi {
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: #4532f0 0px 1px 4px;
+    color: white;
+}
+
+
+
+.grafico-michi {
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    min-height: 500px;
+    margin-top: 50px;
+    background-color: #000000;
+    border: 2px solid #4532f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #555;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-michi img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
