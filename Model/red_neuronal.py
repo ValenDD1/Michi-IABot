@@ -199,10 +199,8 @@ def generate_training_data(num_games=10000):
 def get_ai_move(board,model):
     
     available_moves = [i for i, x in enumerate(board) if x == 0]  
-    
     if not available_moves:  
         return -1  
-
     predictions = model.predict(np.array([board]))  
     best_move = available_moves[np.argmax(predictions[0][available_moves])]
     
