@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICHI</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/SENATI_LOGO.jpg') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/graficos.css') }}">
+</head>
+<body class="michi-body">
+    <header class="grafico-header">
+        <nav class="michi-navbar">
+            <ul>
+                <li><a href="/">Jugar</a></li>
+                <li><a href="/grafico">Gráfico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="michi-main">
+        <section class="Titulo-michi">
+            <h2>GRAFICO DE LA RED NEURONAL</h2>
+        </section>
+
+        <div class="grafico-michi">
+            <img src="{{ url_for('grafico_img') }}" alt="Gráfico de certeza">
+        </div>
+
+
+    </main>
+
+    <footer class="grafico-footer">
+        <p>&copy; TIC TAC TOC CON RED NEURONAL</p>
+    </footer>
+</body>
+</html>
